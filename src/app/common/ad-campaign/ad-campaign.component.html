@@ -1,0 +1,97 @@
+<div class="campaign">
+    <div class="row mt-4">
+        <div class="col-md-5"></div>
+        <div class="col-md-2">
+            <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+        </div>
+        <div class="col-md-5"></div>
+    </div>
+    
+    <div class="text-center my-5 heading">Write your ad campaign</div>
+    
+    <div class="row">
+        <div class="col-md-7">
+            <form class="example-fqrm">
+                <mat-form-field class="example-full-width mb-3">
+                    <mat-label>Campaign Name</mat-label>
+        
+                    <input type="text" matInput placeholder="" value="">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+        
+                <mat-form-field class="example-full-width mb-3">
+                    <mat-label>Your Website</mat-label>
+        
+                    <input type="text" matInput placeholder="Consider what you are advertising, enter the most relevant page"
+                        value="">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+        
+                <mat-form-field class="example-full-width mb-3">
+                    <mat-label>Description(optional)</mat-label>
+        
+                    <input type="text" matInput placeholder="" value="">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+        
+        
+                <mat-form-field class="example-chip-list mb-3">
+                    <mat-label>KeyWords</mat-label>
+                    <mat-chip-list #chipList aria-label="Fruit selection">
+                        <mat-chip *ngFor="let Tag of Tags" [selectable]="selectable" [removable]="removable"
+                            (removed)="remove(Tag)">
+                            {{Tag.name}}
+                            <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+                        </mat-chip>
+                        <input placeholder="New Tag..." [matChipInputFor]="chipList"
+                            [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
+                            (matChipInputTokenEnd)="add($event)">
+                    </mat-chip-list>
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width mb-3">
+                    <mat-label>Address(prefilled)</mat-label>
+        
+                    <input type="text" matInput placeholder="" value="">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+        
+                <mat-form-field class="example-full-width mb-3">
+                    <mat-label>Contact(prefilled)</mat-label>
+        
+                    <input type="text" matInput placeholder="" value="">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+        
+            </form>
+        </div>
+        
+        <div class="col-md-1"></div>
+        <div class="col-md-4 ad-preview p-5">
+            <div class="ad-image"></div>
+            <div class="mt-2">
+                Lossaarem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Lossaarem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lossaarem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lossaarem ipsum dolor sit amet, consectetur adipiscing elit.
+
+            </div>
+        </div>
+        
+
+        
+    </div>
+
+    <div class="row justify-content-between mt-4">
+        <div class="col-4 ">
+            <a class="btn btn-primary" routerLink="/bussiness_page" role="button">back</a>
+        </div>
+        <div class="col-4">
+            <a class="btn btn-primary" href="#" role="button">next</a>
+        </div>
+
+    </div>
+
+    
+</div>
