@@ -15,6 +15,7 @@ import { BussinessComponent } from './common/bussiness/bussiness.component';
 import { AdCampaignComponent } from './common/ad-campaign/ad-campaign.component';
 import { BussinessPageComponent } from './view/bussiness-page/bussiness-page.component';
 import { AdCampaignPageComponent } from './view/ad-campaign-page/ad-campaign-page.component';
+import { BudgetComponent } from './common/budget/budget.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { AdCampaignPageComponent } from './view/ad-campaign-page/ad-campaign-pag
     AdCampaignComponent,
     BussinessPageComponent,
     AdCampaignPageComponent,
-    routingComponents
+    routingComponents,
+    BudgetComponent
   ],
   imports: [
     BrowserModule,

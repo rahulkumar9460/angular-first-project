@@ -17,6 +17,11 @@
   height: 90%;
 }
 
+mat-progress-bar {
+    height: 10px;
+    border-radius: 5px;
+}
+
 .campaign .heading {
     font-style: normal;
     font-weight: 500;

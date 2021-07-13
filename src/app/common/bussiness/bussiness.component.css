@@ -8,6 +8,11 @@
     width: 100%;
 }
 
+mat-progress-bar {
+    height: 10px;
+    border-radius: 5px;
+}
+
 .example-chip-list {
     width: 100%;
 }
